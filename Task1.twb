@@ -1,0 +1,684 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20261.26.0226.1626                               -->
+<workbook original-version='18.1' source-build='2026.1.0 (20261.26.0226.1626)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='world_population_sample (world_population_dataset)' inline='true' name='federated.0g002830zh1n4x1dvdoiq0b3wgbm' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='world_population_dataset' name='excel-direct.15skyut18cet921eelc4y0sncr9s'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Administrator/Downloads/world_population_dataset.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.15skyut18cet921eelc4y0sncr9s' name='world_population_sample' table='[world_population_sample$]' type='table'>
+          <columns gridOrigin='A1:F31:no:A1:F31:0' header='yes' outcome='6'>
+            <column datatype='string' name='Country' ordinal='0' />
+            <column datatype='integer' name='Population_Millions' ordinal='1' />
+            <column datatype='integer' name='Median_Age' ordinal='2' />
+            <column datatype='real' name='Male_Population_Millions' ordinal='3' />
+            <column datatype='real' name='Female_Population_Millions' ordinal='4' />
+            <column datatype='integer' name='Urban_Population_Percent' ordinal='5' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[world_population_sample]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:F31:no:A1:F31:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[world_population_sample]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[world!population!sample_832A90AD360C4969A30D65CAABD43ACC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Population_Millions</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Population_Millions]</local-name>
+            <parent-name>[world_population_sample]</parent-name>
+            <remote-alias>Population_Millions</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[world!population!sample_832A90AD360C4969A30D65CAABD43ACC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Median_Age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Median_Age]</local-name>
+            <parent-name>[world_population_sample]</parent-name>
+            <remote-alias>Median_Age</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[world!population!sample_832A90AD360C4969A30D65CAABD43ACC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Male_Population_Millions</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Male_Population_Millions]</local-name>
+            <parent-name>[world_population_sample]</parent-name>
+            <remote-alias>Male_Population_Millions</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[world!population!sample_832A90AD360C4969A30D65CAABD43ACC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Female_Population_Millions</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Female_Population_Millions]</local-name>
+            <parent-name>[world_population_sample]</parent-name>
+            <remote-alias>Female_Population_Millions</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[world!population!sample_832A90AD360C4969A30D65CAABD43ACC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Urban_Population_Percent</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Urban_Population_Percent]</local-name>
+            <parent-name>[world_population_sample]</parent-name>
+            <remote-alias>Urban_Population_Percent</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[world!population!sample_832A90AD360C4969A30D65CAABD43ACC]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Female Population Millions' datatype='real' name='[Female_Population_Millions]' role='measure' type='quantitative' />
+      <column caption='Male Population Millions' datatype='real' name='[Male_Population_Millions]' role='measure' type='quantitative' />
+      <column caption='Median Age' datatype='integer' name='[Median_Age]' role='measure' type='quantitative' />
+      <column caption='Population Millions' datatype='integer' name='[Population_Millions]' role='measure' type='quantitative' />
+      <column caption='Urban Population Percent' datatype='integer' name='[Urban_Population_Percent]' role='measure' type='quantitative' />
+      <column caption='world_population_sample' datatype='table' name='[__tableau_internal_object_id__].[world!population!sample_832A90AD360C4969A30D65CAABD43ACC]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='world_population_sample' id='world!population!sample_832A90AD360C4969A30D65CAABD43ACC'>
+            <properties context=''>
+              <relation connection='excel-direct.15skyut18cet921eelc4y0sncr9s' name='world_population_sample' table='[world_population_sample$]' type='table'>
+                <columns gridOrigin='A1:F31:no:A1:F31:0' header='yes' outcome='6'>
+                  <column datatype='string' name='Country' ordinal='0' />
+                  <column datatype='integer' name='Population_Millions' ordinal='1' />
+                  <column datatype='integer' name='Median_Age' ordinal='2' />
+                  <column datatype='real' name='Male_Population_Millions' ordinal='3' />
+                  <column datatype='real' name='Female_Population_Millions' ordinal='4' />
+                  <column datatype='integer' name='Urban_Population_Percent' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='world_population_sample (world_population_dataset) (2)' inline='true' name='federated.09cebmc1n7bbyb1h708u11r3mhz2' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='world_population_dataset' name='excel-direct.11ol8zh1ent7ws1cnvrlm07ln0ts'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Administrator/Downloads/world_population_dataset.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.11ol8zh1ent7ws1cnvrlm07ln0ts' name='world_population_sample' table='[world_population_sample$]' type='table'>
+          <columns gridOrigin='A1:F31:no:A1:F31:0' header='yes' outcome='6'>
+            <column datatype='string' name='Country' ordinal='0' />
+            <column datatype='integer' name='Population_Millions' ordinal='1' />
+            <column datatype='integer' name='Median_Age' ordinal='2' />
+            <column datatype='real' name='Male_Population_Millions' ordinal='3' />
+            <column datatype='real' name='Female_Population_Millions' ordinal='4' />
+            <column datatype='integer' name='Urban_Population_Percent' ordinal='5' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[world_population_sample]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:F31:no:A1:F31:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[world_population_sample]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[world!population!sample_281842C6C3CC46ECB283B5C3FCA8D80E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Population_Millions</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Population_Millions]</local-name>
+            <parent-name>[world_population_sample]</parent-name>
+            <remote-alias>Population_Millions</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[world!population!sample_281842C6C3CC46ECB283B5C3FCA8D80E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Median_Age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Median_Age]</local-name>
+            <parent-name>[world_population_sample]</parent-name>
+            <remote-alias>Median_Age</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[world!population!sample_281842C6C3CC46ECB283B5C3FCA8D80E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Male_Population_Millions</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Male_Population_Millions]</local-name>
+            <parent-name>[world_population_sample]</parent-name>
+            <remote-alias>Male_Population_Millions</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[world!population!sample_281842C6C3CC46ECB283B5C3FCA8D80E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Female_Population_Millions</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Female_Population_Millions]</local-name>
+            <parent-name>[world_population_sample]</parent-name>
+            <remote-alias>Female_Population_Millions</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[world!population!sample_281842C6C3CC46ECB283B5C3FCA8D80E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Urban_Population_Percent</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Urban_Population_Percent]</local-name>
+            <parent-name>[world_population_sample]</parent-name>
+            <remote-alias>Urban_Population_Percent</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[world!population!sample_281842C6C3CC46ECB283B5C3FCA8D80E]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Female Population Millions' datatype='real' name='[Female_Population_Millions]' role='measure' type='quantitative' />
+      <column caption='Male Population Millions' datatype='real' name='[Male_Population_Millions]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Median Age (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='0' formula='[Median_Age]' peg='0' size='3.61' />
+      </column>
+      <column caption='Median Age' datatype='integer' name='[Median_Age]' role='measure' type='quantitative' />
+      <column caption='Population Millions' datatype='integer' name='[Population_Millions]' role='measure' type='quantitative' />
+      <column caption='Urban Population Percent' datatype='integer' name='[Urban_Population_Percent]' role='measure' type='quantitative' />
+      <column caption='world_population_sample' datatype='table' name='[__tableau_internal_object_id__].[world!population!sample_281842C6C3CC46ECB283B5C3FCA8D80E]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='world_population_sample' id='world!population!sample_281842C6C3CC46ECB283B5C3FCA8D80E'>
+            <properties context=''>
+              <relation connection='excel-direct.11ol8zh1ent7ws1cnvrlm07ln0ts' name='world_population_sample' table='[world_population_sample$]' type='table'>
+                <columns gridOrigin='A1:F31:no:A1:F31:0' header='yes' outcome='6'>
+                  <column datatype='string' name='Country' ordinal='0' />
+                  <column datatype='integer' name='Population_Millions' ordinal='1' />
+                  <column datatype='integer' name='Median_Age' ordinal='2' />
+                  <column datatype='real' name='Male_Population_Millions' ordinal='3' />
+                  <column datatype='real' name='Female_Population_Millions' ordinal='4' />
+                  <column datatype='integer' name='Urban_Population_Percent' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='task 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='world_population_sample (world_population_dataset) (2)' name='federated.09cebmc1n7bbyb1h708u11r3mhz2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09cebmc1n7bbyb1h708u11r3mhz2'>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Population Millions' datatype='integer' name='[Population_Millions]' role='measure' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Population_Millions]' derivation='Sum' name='[sum:Population_Millions:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.09cebmc1n7bbyb1h708u11r3mhz2].[sum:Population_Millions:qk]</rows>
+        <cols>[federated.09cebmc1n7bbyb1h708u11r3mhz2].[none:Country:nk]</cols>
+      </table>
+      <simple-id uuid='{DC10A9A9-08EB-4EC7-A099-AC101933E50A}' />
+    </worksheet>
+    <worksheet name='task1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='world_population_sample (world_population_dataset) (2)' name='federated.09cebmc1n7bbyb1h708u11r3mhz2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09cebmc1n7bbyb1h708u11r3mhz2'>
+            <column datatype='integer' name='[Median Age (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='0' formula='[Median_Age]' peg='0' size='3.61' />
+            </column>
+            <column caption='Median Age' datatype='integer' name='[Median_Age]' role='measure' type='quantitative' />
+            <column-instance column='[Median_Age]' derivation='Count' name='[cnt:Median_Age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Median Age (bin)]' derivation='None' name='[none:Median Age (bin):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+          </pane>
+        </panes>
+        <rows>[federated.09cebmc1n7bbyb1h708u11r3mhz2].[cnt:Median_Age:qk]</rows>
+        <cols>[federated.09cebmc1n7bbyb1h708u11r3mhz2].[none:Median Age (bin):qk]</cols>
+        <show-full-range>
+          <column>[federated.09cebmc1n7bbyb1h708u11r3mhz2].[Median Age (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{08768403-93CF-48BD-A1B2-00959E1C97A9}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='63'>
+    <window class='worksheet' name='task1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.09cebmc1n7bbyb1h708u11r3mhz2].[none:Country:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{466F3C4A-DCB2-44A7-954E-F840BB3612F1}' />
+    </window>
+    <window class='worksheet' maximized='true' name='task 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.09cebmc1n7bbyb1h708u11r3mhz2].[none:Country:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{C674DBD6-2101-4DA4-A4B6-B95A1ECB2680}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='task 2' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='task1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAMr0lEQVR4nO3da1Mb1x0G8GdXQiCBBAhZIO7Y2MaxQxpnXDdO0kkzTZtm+r6foB+hfd2P
+      0JnOdDrTTj9AJ51p3GknvaSTNp2OHaeOk7iAbTCYi0BcJJCErrvn9AXBjR2pht3lIHGe3xt7
+      LPbv/2r16OyuOEeGlFKCSFPmcTdAdJz8bgtIKSGEgBAChmE4riOEgGl6m0eva+4Plm7282nN
+      sN9HUbNRenQcgEJuB2VhorszDJ/PBwCP/3TCsiz4/a7zeKQ1hRAA4OmBa4b9llLCMAxXx/dp
+      jbLfDo+kjbn5JawszMNyVoCoITiLoJSQdhUVGxACvJKgpuVwDJLw+fyAIcFbSNTMnAXAaMFz
+      z1/a+6t314NEyjm+CvHyTgjRceHZO2mNASCtMQCkNQaAtMYAkNYYANIaA0BaYwBIawwAaY0B
+      IK0xAKQ1BoC0xgCQ1pwFQNpYXVnG3CxnhFFzc/jr0CZ6E/24N3MPPikhpHw8Od4pt9urqCm/
+      2E8vOenxWdvYtu1pn/KAx9c0zQP/mnyjHG+HE2IMlLIbCHbFn/jP3TzpR/Xi8vqF8OU/vap5
+      2HqFQgE//sX7sERjzcf70Q+u4sxQ74F+tlGOt/NVIcrAUKIHhrE3OUZK6WrVALfbq6h5FKtC
+      OOnRNE2kdsqwGywAQh58ZZBGOd6OAxCLx5/9Q0QNjneBSGsMAGmNASCtMQCkNQaAtMYAkNYY
+      ANIaA0BaYwBIawwAaY0BIK0xAKQ1BoC0xgCQ1hgA0hoDQFpjAEhrjgOwvDCLB/NLXvZCpJzD
+      KZEVPHqUQu/gAGwpASFcr0Rg27bjbVXV3N8/L1czcNLjUTxXXhBCwLIOtlBOoxxvx8uidMdi
+      CIkS8raBTv/eRGS3k5wP+zX3qmsexaR44PA9ej2Z3CumaR5qXxrheDvswI+hgRh2ijY6vd8H
+      ImUcv3zDXT0Id3nZCpF6vAtEWmMASGsMAGmNASCtMQCkNQaAtMYAkNYYANIaA0BaYwBIawwA
+      aY0BIK0xAKQ1BoC0xgCQ1hgA0prjABzFFx0TqeY4ANN3P8NSMuVlL0TKOZ4SGQy2YSeTgd3f
+      y1UhXDhJq0J8PpvEvcXNA/2slBKGYXj6/9eq2R/rwIvnh+tuUzcA+6c4hmHUaNSGabagUsjA
+      NgwEfFwVwo2TsirEjek1zK7lj7uNJ7zxwgCuXDxd9/E6z7zERx/+FWtZgb74KVz9+uWnHvdh
+      eHQUQ6NjvIqmplb39Vu1LGwmF1AUtd9tDNOEaXo7hBGpVicABroiEUS6urG5uoidQlVtV0SK
+      1B0BFlY38Marl+H3W7jz6ZzKnoiUqXv19eo3ruDW7bu4MDGJeGJAZU9EytQcAZZn7+L9D2/i
+      s6kZdHRG0d3RprovIiVqBiDQFkIo2Aa/z0CpUlHdE5EyNU+B4oOn8b3B0/jOm1WUq435oQuR
+      F+peBH/60T/w7vXf4/6jVZX9EClV9yJ4bXMbl196CZGuqMp+iJSqOwJcOH8WjxYWkN7OqeyH
+      SKm6I8C9mRkspdZRlG0YH+lX2RORMnUD0D9yFsFQEHZri8p+iJSqeQq0NDuHfH4TS2sZtIcj
+      qnsiUqZmAMqlbcw9TKI10ALRoL97TuSFmgEYv/QSwqFWvP6tV5FaWVHdE5Eyde8CXZmcwG9/
+      9ydcuHRRZT9EStUJgMSd6TmcHR3Gw3tTajsiUqhmAKQELk6cxW5hF+cvvVBzQykl0un0kTZH
+      dNRqBmD61ge4/rebaA0GUSoXa264tbaM/9xfOMreiI5czc8Bzn3tZRQtiU+mlzB05sJXHpdW
+      GcmNDEQ5j3JVwG9Krgrh0ElaFaIRrWfy+Mmv/lz38ZoBmLr1Ad59/zYmzo2jWCp/5XHD34rJ
+      yUmk02m0tvxvEOGqEM6clFUhGlGpYuPu4k7dx2s+85OvvIXJV956ZvFolL8oR82tZgD+/pf3
+      kC5VcHnyBYS7ooh2hlX3RaREzbH86rVriEYiyOfzsGzvzneJGk3NALS1hyGKO1hYmMfnUw9U
+      90SkTN2rL7/fjxbThL8loLIfIqXqBMDAa99+G7YtYfq4+CGdXLU/CRYC//7kEwi7iBs3Plbd
+      E5EyNUeAQnYT92ZmsJvLY2T8OdU9ESlTcwRo74qjryuIzc1NZLKcE0wnV90T/N38Lnx+P3xc
+      AZpOsLoBGB4ZRqmQR2ansb7wgMhLdW+DnuobhGxpw0JyXWU/RErVHQEMaWH24QquvXJVZT9E
+      StWdEfbx7U9x+cWLuHnjI7UdESlUdwQYHR7A/ftzGB6r/wVjRM2uZgDu/OufGJ58Gd9983Vk
+      N/hdwHRy1bwI7o604r0//BGd/jKC8fOqeyJSpmYAhi9eQWw0B0uYiITbVfdEpEzNABiGgfaO
+      /7ckosDS/DzSuTKen3yO3xVMTcvhhFkT4Ug7ljd2AClhC+HJpPgHj9ZQsbybgCOEcD1/tzfa
+      gVj33psBJ8WfPM4CIGxIsw3dARNFaaD9i0nabiZrCyHw8+u3sbhRcFzjKPzw7Uv4/qt7c585
+      Kf7kcXYkDRNSWIiPjKGd5z/UxJyNAIaBaE/M41aI1OP7N2mNASCtMQCkNQaAtMYAkNYYANIa
+      A0BaYwBIawwAaY0BIK0xAKQ1BoC0xgCQ1hgA0hoDQFpjAEhrjgNQrZRRKH71O4SJmonjAGys
+      pzA7PQNGgJqZ469Rb2ttQUs4goBHq0J4udKCl6SQsCxr7+9cFeLEcRgAGzMzD3Cqbwi2YcDv
+      0aoQjcgwjcerNnBViJPHYQB8uPbaN73thOgY8C4QaY0BIK0xAKQ1BoC0xgCQ1hgA0hoDQFpj
+      AEhrDABpjQEgrTEApDUGgLTGAJDWGADSGgNAWmMASGsMAGnNcQBKu1lsZ3e97IVIOceT4nfS
+      G9iqtKAzHHr8b24mxTeyL++XlNLz/Typz1szcByAWLwX28kMgL3J4kKIE7sqxP4qDPv75+UL
+      1sl+N+pz1YwcBkAgubyCfLaEij2EVj9XhXDKsqxDrwrh9aoUOnMYABNDZ85jyNteiJTjWwlp
+      jQEgrTEApDUGgLTGAJDWGADSGgNAWmMASGsMAGmNASCtMQCkNQaAtMYAkNYYANKa4wAszj/A
+      zOy8l70QKecwABVUrFZ0SBtFb/shUsrhhBgDtl1FFTbPoaipOQxAC3q6QygJH1q97YdIKeeT
+      4nsTAPYmiO9PindDSokLwzH0dJZd1fFarDP0xKR4r1eFEEI8rn8YL473whaNtZpEItqGcEf7
+      cbfxhGf1ZMgGWZPDtm1Xk+pV1DyKSfHNsN/7b3Je1myU/XY8AnjtKFY68LqmYRie1gOaY7+P
+      omaj9NgwIwDRcTj2EWAztYKNbBmjpyJ4uLqJ9nAXRgf7XNVcWpjFdq6KwYEollc2EB8YQW80
+      7LhetZjDw8UkWoIdaJVlZHIlnJ2YQKvf+bvYxuoytnay6B04A5FfwVa5HedGex3XA4Dk4jwy
+      uSKGhvqxtJREYnAE0U7n5+RWuYCHC0swA0H47CIKZRunz55HMOD81GVrPYmtrTS644NIJZcR
+      6ozi9HC/43qAxNrKItI7u0gkElhf30BrKIzRocSBtj72u5jdsT7ALkOIKkqlMkrliuuaif5B
+      QFjY2sph4tIE8uktV/X8bR3oi3XBtgT6+gdgyMNftD6tp7cPAVPCrhSQzpVgV6uua+73lpyf
+      hxFoRcVlTV8giEQ8CtsWKBWLKJVKEC5PGCKRCErFIjJbaSTGxiErBVf1AONxzZZgGPGeMKxD
+      3FQ45gBISGGjWq0ivbWNkbPnYJXyrmtOT01jZHwcAVMgn83BNtztZnknhUebRYwO9WF6agpD
+      Y2cQ8Lm7Hpi7P4PwqSH4RBk+n4H09rarenv7PYWBkTPo6gojFu/DztaGq4rVfBoPV3cwNpyA
+      bQQwEIsgX3T3BmVJE2NjAyhks8hm86hUXb6ZSAn4WpGIdWJteR7JTBUjhziDOOZrAImt9RRy
+      hRJOxXuR2VxHZ6wP4ZCbTxcEVpdXULEN9A/EkVpbRzzRj4DPeQjKhRzWNtIIdkQgSrsoW0D/
+      0ABaTOch2FpfRb5YRbwvgWDARKFkIRR0s98SqeQKSlWJxEAC6dQaOqJxdAQDjitWS7tIpjbR
+      Fgoj6JfIlSwk+uIwXdwM2E5vIJsvo39wAJn1JNoiPQiH2hzXg5TYXF9DyTYQjYSwsZVBKNyF
+      U9HOA23Oi2DS2rFfAxAdJwaAtMYAkCYkcrkshJQo7uZQtb74VP+YuyJS5je//BlmV7fxzq9/
+      irtLGdy5dZMXwaQLifeuvwPpCyKXWkSo/zSWkunj/ySYSJVINIHt1COMX3oeItiDYqHCEYD0
+      JaXkNQDpyzAM/BdZ3S5IEflxaQAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
